@@ -34,6 +34,9 @@ npm run dev
 
 Open: http://localhost:5173
 
+DEMO VIDEO
+https://youtube.com/shorts/9_aduMsWslk?feature=share
+
 ---
 
 ## 👨‍💻 Author
