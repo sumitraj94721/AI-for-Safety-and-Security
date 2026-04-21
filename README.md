@@ -38,4 +38,4 @@ Open: http://localhost:5173
 
 ## 👨‍💻 Author
 
-Your Name
+SUMIT RAJ
