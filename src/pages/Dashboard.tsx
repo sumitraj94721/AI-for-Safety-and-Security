@@ -3,19 +3,7 @@ import Sidebar from '../components/Sidebar';
 import StatusPanel from '../components/StatusPanel';
 import { Camera, ShieldAlert, Satellite, BellRing } from 'lucide-react';
 
-// --- Placeholder Component ---
-// IMPORTANT: Do not implement camera logic here.
-// The user will paste their existing camera code inside this component.
-function CameraModule() {
-  return (
-    <div className="camera-placeholder">
-      <Camera size={48} className="camera-placeholder-icon" />
-      <p style={{ fontSize: '1.2rem', fontWeight: 500, marginBottom: '0.5rem' }}>Camera Stream Input</p>
-      <p style={{ fontSize: '0.9rem', opacity: 0.6 }}>[ Paste Existing Camera Code Here ]</p>
-    </div>
-  );
-}
-
+import CameraModule from '../components/CameraModule';
 export default function Dashboard() {
   return (
     <div className="dash-layout">
