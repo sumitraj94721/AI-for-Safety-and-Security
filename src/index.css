@@ -319,6 +319,89 @@ body::before {
   50% { background: rgba(239, 68, 68, 0.2); }
 }
 
+/* ===== Face Count Badge ===== */
+.face-count-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(0, 212, 255, 0.08);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: var(--radius-xl);
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Per-Face Emotion Grid ===== */
+.face-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+}
+
+.face-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.2rem;
+  text-align: center;
+  transition: all var(--transition-normal);
+  animation: fadeInUp 0.25s ease;
+}
+
+.face-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.face-card-safe {
+  border-left: 3px solid var(--accent-green);
+}
+
+.face-card-threat {
+  border-left: 3px solid var(--accent-red);
+  animation: fadeInUp 0.25s ease, pulse-threat 1.5s ease-in-out infinite;
+}
+
+.face-card-index {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.face-card-emotion {
+  font-size: 1.15rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.25rem;
+}
+
+.face-card-confidence {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.face-card-alert {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-red);
+  letter-spacing: 0.05em;
+}
+
 /* ===== Footer ===== */
 .app-footer {
   margin-top: auto;
